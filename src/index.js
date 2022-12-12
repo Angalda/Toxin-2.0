@@ -1,5 +1,5 @@
-import './styles/index.css'; // добавьте импорт главного файла стилей 
-
+//import './styles/index.css'; // добавьте импорт главного файла стилей 
+import './main.scss';
 console.log('Hello, World!');
 
 const numbers = [2, 3, 5];

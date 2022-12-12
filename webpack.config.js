@@ -40,24 +40,36 @@ module.exports = {
 
       {
         // применять это правило только к CSS-файлам
-        test: /\.css$/,
-        // при обработке этих файлов нужно использовать
-        // MiniCssExtractPlugin.loader и css-loader
+        test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, {
           loader: 'css-loader',
           options: { importLoaders: 1 }
         },
-        'postcss-loader']
+        'postcss-loader',
+      'sass-loader']
       },
+
+      
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        },
+
 
       ]
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html' // путь к файлу index.html
-    }),
+      template: path.join(__dirname, 'src', 'index.pug'),
+      filename: 'index.html',
+      }),
+
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+     filename: '[name].[contenthash].css',
+     }),
+
+     
   ] 
 }

@@ -1,4 +1,4 @@
-// подключите плагины в файл
+//подключите плагины в файл
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
@@ -13,3 +13,11 @@ module.exports = {
     cssnano({ preset: 'default' })
   ]
 }; 
+
+module.exports = {
+  plugins: {
+    'postcss-preset-env': {
+      browsers: 'last 2 versions',
+    },
+  },
+};
