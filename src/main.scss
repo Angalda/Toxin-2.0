@@ -1,7 +1,10 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+$font-size: 14px;
+$font-color: rgba(31, 32, 65, 0.5);
 
 html {
   font-size: $font-size;
   color: $font-color;
+  height: 100%;
 }
+
+@import url(components/header/header.scss);

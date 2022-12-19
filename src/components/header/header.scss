@@ -1,0 +1,154 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 140px;
+    max-width: 1440px;
+}
+
+.header__logo-img {
+    width: 106px;
+    height:40px;
+    background-image:url(../../img/logo.svg);
+}
+
+.header__logo-img:hover {
+    opacity: 0.8;
+}
+
+.header__menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: rgba(31, 32, 65, 0.5);
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__nav-link {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.header__nav-link:hover {
+    color: #000
+}
+
+.header__nav-link_more {
+    width: 24px;
+    height: 21px;
+    background-image:url(../../img/expand_more.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.header__button {
+    padding: 10px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header__button-signup {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #fff;
+}
+
+.header__button-signup:hover {
+    background: #af8cfc;
+}
+
+.header__button-signin {
+    padding: 8px 18px;
+    color: #cdc7dada;
+    background-color: #fff;
+}
+
+.header__button-signin:hover {
+    color:#af8cfc;;
+    background: rgba(255, 255, 255, 0.973);
+}
+
+.header__button-signin:before {
+    content: "Войти";
+    padding: 10px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    position:absolute;
+    left: -1.75px;
+    top: 0.2px;
+    z-index: -1;
+}
+
+.header__burger {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header {
+        padding: 15px 50px;
+    }
+
+}
+
+@media screen and (max-width: 991.98px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .header__burger-line {
+        border-bottom: 2px solid #cdc7dada;
+        width: 30px;
+        height: 8px;
+    }
+
+}
+
