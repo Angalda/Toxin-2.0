@@ -1,0 +1,24 @@
+.copyright__container {
+    padding: 26px 140px;
+    margin: 0;
+    border-top: 1px solid rgba(31, 32, 65, 0.05);
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .copyright__container {
+        padding: 50px 20px;
+    }
+
+}

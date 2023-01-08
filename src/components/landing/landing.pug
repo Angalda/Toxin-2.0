@@ -1,14 +1,4 @@
 section.landing__container
-  form.landing__form
-
-    label.landing__label-name(for="arrival") Прибытие
-    input#arrival.landing__input-name(type="text" placeholder="дд.мм.гггг")
-
-    label.landing__label-name(for="leave") Выезд
-    input#leave.landing__input-name(type="text" placeholder="дд.мм.гггг")
-
-    label.landing__label-name(for="guests") Гости
-    input#guests.landing__input-name(type="text" placeholder="Сколько гостей")
-
-    input.landing__form-submit(type="submit" value="Подобрать номер")
-
+  include ./search-form/search-form.pug
+  .landing__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+  

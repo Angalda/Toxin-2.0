@@ -7,6 +7,16 @@ html {
   height: 100%;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+}
+
 @import url(components/header/header.scss);
 @import url(components/mobile-menu/mobile-menu.scss);
 @import url(components/landing/landing.scss);
+@import url(components/landing/search-form/search-form.scss);
+@import url(components/footer/footer.scss);
+@import url(components/footer/copyright/copyright.scss);

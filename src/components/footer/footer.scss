@@ -1,0 +1,138 @@
+.footer__container {
+    width: 100%;
+    padding: 100px 140px;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 26fr 16fr 16fr 16fr 26fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+}
+
+.footer__logo-img {
+    width: 106px;
+    height:40px;
+    background-image:url(../../img/logo.svg);
+    margin: 0 0 20px;
+}
+
+.footer__logo-img:hover {
+    opacity: 0.8;
+}
+
+.footer__toxin-text {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__list-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.footer__link:hover {
+    color: #000
+}
+
+.footer__subscribe-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.footer__subscribe-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    padding: 0;
+    margin: 0;
+}
+
+.footer__subscribe-form {
+    margin: 20px 0 0;
+    padding: 0;
+    position: relative;
+}
+
+.footer__subscribe-input {
+    padding: 13px 15px;
+    margin: 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    background-image: url(../../img/arrow_forward.png);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    width: 100%;
+}
+
+.footer__subscribe-submit {
+    width: 12px;
+    height: 25px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.footer__subscribe-submit:hover {
+    background-color: rgba(218, 206, 191, 0.151);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .footer__container {
+        padding: 50px 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .footer__container {
+       
+        padding: 100px 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+    }
+
+
+
+}

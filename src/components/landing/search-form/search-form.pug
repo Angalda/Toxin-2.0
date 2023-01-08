@@ -1,0 +1,20 @@
+form.search-form
+  fieldset.search-form__room
+    .legend.search-form__name Найдём номера под ваши пожелания
+
+    .search-form__dates
+        .search-form__arrival
+            label.search-form__label(for="arrival") Прибытие
+            input#arrival.search-form__input(type="text" placeholder="дд.мм.гггг")
+        .search-form__leave
+            label.search-form__label(for="leave") Выезд
+            input#leave.search-form__input(type="text" placeholder="дд.мм.гггг")
+    .search-form__guests
+        label.search-form__label(for="guests") Гости
+        select#guests.search-form__input-guest(type="text" placeholder="Сколько гостей")
+            option.search-form__guest-option(style="display:none") Сколько гостей
+            option.search-form__guest-option Взрослые
+            option.search-form__guest-option Дети
+            option.search-form__guest-option Младенцы
+
+    input.search-form__form-submit(type="submit" value="Подобрать номер")

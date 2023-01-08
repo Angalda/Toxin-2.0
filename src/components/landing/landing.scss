@@ -1,17 +1,34 @@
 .landing__container {
     width: 100%;
     background-image: url('../../img/image3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
     margin: 0;
     border-top: 1px solid #fff;
     height: 830px;
+    position: relative;
 }
 
-.landing__form {
-    padding: 40px 30px 30px;
-    margin: 70px 150px;
-    display: flex;
-    flex-direction: column;
-    width:380px;
-    background-color: #fff;
+.landing__text {
+    position: absolute;
+    right: 181px;
+    bottom: 18px;
+    max-width: 297px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.75);
 }
+
+
+@media screen and (max-width: 1200px) {
+
+    .landing__text {
+        right: 20px;
+    }
+
+}
+
+
