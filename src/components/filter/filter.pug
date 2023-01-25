@@ -1,5 +1,6 @@
+include ./card/card.pug
 section.filter__container
     .filter__form-container
     .filter__rooms-container
         .filter__cards
-            include ./card/card.pug
+            +card('../../img/room1.jpg', '12', '', 150)
